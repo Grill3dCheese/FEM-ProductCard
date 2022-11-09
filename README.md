@@ -56,8 +56,8 @@ This project was loads of fun and helped me learn/understand several things:
 - Implemented a CSS reset file for the first time 🙌
 - Gained a better understanding of when to use CSS Grid VS. Flexbox
 - Used semantic HTML structuring elements: main, article and footer
-- Learned all about the HTML <picture> element and implemented into this project
-- Also learned about the HTML <del> element, how to use it AND issues with accessibility that can be resolved with some CSS magic! 🪄
+- Learned all about the HTML picture element and implemented into this project
+- Also learned about the HTML del element, how to use it AND issues with accessibility that can be resolved with some CSS magic! 🪄
 
 ```html
 <picture>
@@ -105,8 +105,8 @@ del::after {
 
 ### Useful resources
 
-- [<picture>: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - Excellent article from MDN explaining the use cases for the <picture> element and how it assists when using multiple images that display based on viewport size. Also explains fallbacks - where we can offer alternative image formats for cases where certain formats are not supported and how we can help to save bandwidth and improve page load times! A win-win!
-- [<del>: The Deleted Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del) - This is an amazing article which helped me finally understand the <del> HTML element. I originally started the project by using CSS to line-through the text. I shortly realized that there was an HTML element that could do this without needing HTML and is better for accessability purposes.
+- [&lt;picture&gt;: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - Excellent article from MDN explaining the use cases for the picture element and how it assists when using multiple images that display based on viewport size. Also explains fallbacks - where we can offer alternative image formats for cases where certain formats are not supported and how we can help to save bandwidth and improve page load times! A win-win!
+- [&lt;del&gt;: The Deleted Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del) - This is an amazing article which helped me finally understand the del HTML element. I originally started the project by using CSS to line-through the text. I shortly realized that there was an HTML element that could do this without needing HTML and is better for accessability purposes.
 
 ## Author
 
