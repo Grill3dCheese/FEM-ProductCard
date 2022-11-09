@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot - Desktop
 
-![](./images/image-product-desktop.jpg)
+![](./images/productCardDesktop.png)
 
 ### Screenshot - Mobile
 
-![](./images/image-product-mobile.jpg)
+![](./images/productCardMobile.png)
 
 ### Links
 
