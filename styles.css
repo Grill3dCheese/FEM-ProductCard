@@ -25,6 +25,25 @@ p {
   margin: 15px 0;
 }
 
+del::before,
+del::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+del::before {
+  content: " [deletion start] ";
+}
+
+del::after {
+  content: " [deletion end] ";
+}
+
 .product-card {
   display: grid;
   grid-template-columns: 1fr;
@@ -69,10 +88,6 @@ p {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   color: hsl(158, 36%, 37%);
-}
-
-.original-price {
-  text-decoration: line-through;
 }
 
 .card-button {
