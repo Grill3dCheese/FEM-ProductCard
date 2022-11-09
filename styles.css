@@ -1,4 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 @import "reset.css";
+
+body {
+  background: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+img {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  margin: 15px 0;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  background: hsl(0, 0%, 100%);
+}
+
+.card-contents {
+  padding: 0.75rem 1.25rem;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 12px;
+}
+
+.product-name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-info {
+  line-height: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-price > p {
+  margin: 0;
+}
+
+.discounted-price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  font-weight: 700;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.85rem;
+  margin: 0.75rem 0;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.card-button:hover {
+  background: hsl(158, 36%, 17%);
+  cursor: pointer;
+}
 
 .attribution {
   font-size: 11px;
@@ -7,4 +102,25 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {
+  img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.75rem;
+    height: 100%;
+  }
+  .product-card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 35rem;
+  }
+  .card-contents {
+    margin: 1rem 1.5rem;
+    padding: 0;
+  }
+  .card-button {
+    margin: 1rem 0;
+  }
 }
